@@ -6,7 +6,7 @@ const port = 3000;
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
 app.set('layout', 'layout/main-layout');
-app.get('/', (req, res) => {
+app.get('/index', (req, res) => {
 
     const mahasiswa = [
         {   nama : 'Ade',
