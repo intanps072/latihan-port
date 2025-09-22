@@ -1,16 +1,29 @@
- <!-- <% const nama = 'Kawan kawan'; %> -->
-        <h2> SELAMAT DATANG </h2>
-        <h3> Halo <%=nama%></h3>
+ <!-- <% const nama = 'Semuanya..'; %> -->
+        
+        <h2> Welcome to My Database </h2>
+        <img src="Big Data.jpg">
 
+    <div class="kotak">
+        <h3> Hallo.. <%=nama%></h3>
         <h4> Daftar Mahasiswa</h4>
-    <% if (mahasiswa.length < 1) { %> 
+            <% if (mahasiswa.length < 1) { %> 
         <p> Data Masih Kosong</p>
-    <% } %>
-    <% mahasiswa.forEach (mhs => { %>
-        <ul>
-            <li> Nama : <%= mhs.nama %></li>
-            <li> Email : <%= mhs.email %></li>
-       
-        </ul>
-    <% }) %>
+            <% } %>
+            <% mahasiswa.forEach (mhs => { %>
+            <div class="data">
+
+            <ul>
+                <li> Nama : <%= mhs.nama %></li><br>
+                <li> Email : <%= mhs.email %></li>
+        
+            </ul>
+            </div>
+                <% }) %>
+            
+ 
+    </div>
+    
+
+
+
 

@@ -1,3 +1,4 @@
+
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 const app = express();
@@ -6,12 +7,13 @@ const port = 3000;
 app.set('view engine', 'ejs');
 app.use(expressLayouts);
 app.set('layout', 'layout/main-layout');
+app.use(express.static(__dirname, ));
 
 app.get('/', (req, res) => {
     const mahasiswa = [
-        { nama: 'Ade', email: 'ade@gmail.com' },
-        { nama: 'Asep', email: 'asep@gmail.com' },
-        { nama: 'Agus', email: 'agus@gmail.com' },
+        { nama: ' Intan', email: 'ips.intan072@gmail.com' },
+        { nama: ' Asep', email: 'asep@gmail.com' },
+        { nama: ' Agus', email: 'agus@gmail.com' },
     ];
 
     res.render('index', {
